@@ -22,7 +22,7 @@ const Header = () => {
       
         <ul className={`d-md-flex d-md-block ul-d ${open ? 'd-block' : 'd-none'}`}>
 
-          <li><NavLink to='/home'>Home</NavLink></li>
+          <li><NavLink className={({isActive}) => isActive ? 'active' : undefined} to='/home'>Home</NavLink></li>
           <li><NavLink to='/topics'>Topics</NavLink></li>
           <li><NavLink to='/statastics'>Statastics</NavLink></li>
           <li><NavLink to='/blog'>Blog</NavLink></li>
