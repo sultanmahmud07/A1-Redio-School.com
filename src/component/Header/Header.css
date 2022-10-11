@@ -1,0 +1,29 @@
+.ul-d{
+  list-style: none;
+  transition: 0.5s;
+
+}
+.ul-d li{
+  margin-left: 30px;
+
+}
+.ul-d li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.ul-d li a:hover{
+color: orange;
+
+}
+.sizing{
+  width: 40px;
+}
+.margin-top{
+  margin-top: 20px;
+}
+.m-set{
+  margin-top: -2000px;
+}
