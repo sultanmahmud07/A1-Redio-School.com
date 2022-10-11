@@ -1,0 +1,12 @@
+.cursor-set{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.siz-input{
+  /* width: 500px; */
+  font-size: 30px;
+  color: orange;
+}
