@@ -12,7 +12,7 @@ const Home = () => {
           <div className="left-img w-100 w-lg-50">
             <img className='img-fluid' src={img} alt="" />
           </div>
-          <div className="right-info w-100 w-lg-50">
+          <div className="right-info w-100 w-lg-50 mt-lg-5">
             <h2 className='home-title'> <span className='title'>Welcome to our school,</span> We are always ready to help you!</h2>
             <p className='home-p'>You will get various opportunities in our school. You will get many types of questions and answers here, you will get a chance to take the exam on any subject. So stay with us and learn.</p>
             <div className="btn-container">
