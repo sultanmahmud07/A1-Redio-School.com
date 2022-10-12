@@ -1,0 +1,23 @@
+.single-question{
+  text-align: left;
+  margin-bottom: 100px;
+}
+.q-title{
+  border-bottom: 3px solid orangered;
+  display: inline-block;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.ans{
+  color: orangered;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+}
+.q-p{
+  margin-left: 25px;
+  color: gray;
+  font-size: 18px;
+}
