@@ -13,7 +13,6 @@ const SelectItems = ({option, question}) => {
   const selectHeandlerAdd = (option) =>{
     // console.log(option)
     if(correctAnswer === option){
-      console.log('ok mamu')
       toast.success('🦄 Wow! Your ans is right!', {
         position: "top-center",
         autoClose: 5000,

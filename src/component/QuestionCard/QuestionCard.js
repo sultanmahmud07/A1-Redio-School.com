@@ -8,32 +8,23 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ({question}) => {
-   const options = question.options;
-   const ans =question.correctAnswer;
-   
-  // const {id, correctAnswer, question, options} = question
-  // console.log(question)
-  // console.log(question.id)
+  const options = question.options;
+  const ans =question.correctAnswer;
+  const [anss, setAnss] = useState([]);
+
   const eysHendler =(question) =>{
-    
-    console.log(question.correctAnswer
-      )
-    // toast.info('🦄 Wow so easy!', {
-    //   position: "top-center",
-    //   autoClose: 5000,
-    //   hideProgressBar: false,
-    //   closeOnClick: true,
-    //   pauseOnHover: true,
-    //   draggable: true,
-    //   progress: undefined,
-    //   theme: "dark",
-    //   });
-  }
+    const newAnss = question.correctAnswer
+    setAnss(newAnss)
+    // console.log(question.correctAnswer)
+   }
+
+
+
   return (
     <div className='border shadow p-4 m-5'>
      <div className="q-top-header d-flex">
      <h2>Question:</h2>
-     {/* <div className="eys-container">{eys}</div> */}
+     <div className="eys-container"><span className='ans-tag'>Ans:-</span> <span className='currect-ans'>{anss}</span></div>
       <div className="icon">
         <EyeIcon onClick={() => eysHendler(question)} className="eys-btn w-25"/>
       </div>

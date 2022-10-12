@@ -9,7 +9,7 @@ const Topics = () => {
   return (
     <div>
       <div className="title d-block">
-      <h1 className='topic-header'>This is tropic!!!</h1>
+      <h1 className='topic-header'>These are tropics</h1>
       </div>
       <div className="card-container container">
       {

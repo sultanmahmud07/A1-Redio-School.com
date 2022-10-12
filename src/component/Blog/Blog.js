@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <div>
       <div className="title d-block">
-         <h1 className='topic-header'>This is Blog!!!</h1>
+         <h1 className='topic-header'>These are Blogs!!!</h1>
       </div>
       <div className="container">
         <div className="single-question">

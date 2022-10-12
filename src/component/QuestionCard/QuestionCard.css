@@ -15,3 +15,12 @@
 .eys-btn:hover{
   color: green;
 }
+.ans-tag{
+  color: black;
+  font-size: 20px;
+}
+.currect-ans{
+  color: green;
+  font-weight: bold;
+  
+}
