@@ -3,14 +3,16 @@ import './Header.css';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { Link, NavLink } from 'react-router-dom';
+import { HomeModernIcon } from '@heroicons/react/24/solid'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
   return (
     <nav className='shadow-sm p-3 mb-5'>
       <div className='d-flex justify-content-between container'>
-      <div>
-        <span>Logo</span>
+      <div className='logo-box'>
+        <span><HomeModernIcon className="header-icon"/></span>
+        <span className='header-text'>A1 <span className='r'>R</span>edio</span>
         
       </div>
       <div className="manu-bar d-flex flex-column text-end">

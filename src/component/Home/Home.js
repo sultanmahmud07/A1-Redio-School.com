@@ -1,47 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Line } from 'recharts';
 import img from '../../img/meeting-tipps-erfolgreich-1200x630.jpg';
+import './Home.css';
 
 const Home = () => {
   return (
     <div>
-      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={img} className="d-block w-50" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+      <div className="home-page">
+        <div className="container d-flex flex-column flex-sm-column flex-xl-row">
+          <div className="left-img w-100 w-lg-50">
+            <img className='img-fluid' src={img} alt="" />
+          </div>
+          <div className="right-info w-100 w-lg-50">
+            <h2 className='home-title'> <span className='title'>Welcome to our school,</span> We are always ready to help you!</h2>
+            <p className='home-p'>You will get various opportunities in our school. You will get many types of questions and answers here, you will get a chance to take the exam on any subject. So stay with us and learn.</p>
+            <div className="btn-container">
+              <button className='home-btn' id='home-btn1'><Link to='/topics'>Topics</Link></button>
+              <button className='home-btn' id='home-btn2'><Link to='/blog'>Blog</Link></button>
+              
+              
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="carousel-item">
-      <img src={img} className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
     </div>
   );
 };

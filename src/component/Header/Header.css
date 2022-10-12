@@ -18,8 +18,15 @@
 color: orange;
 
 }
+.manu-bar{
+  position: relative;
+}
 .sizing{
   width: 40px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
 }
 .margin-top{
   margin-top: 20px;
@@ -30,4 +37,42 @@ color: orange;
 .active{
   /* background-color: orange; */
   color: tomato !important;
+}
+.header-icon{
+  color: orangered;
+  width: 50px;
+}
+.header-text{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+.logo-box{
+  display: flex;
+  align-items: flex-end;
+}
+.r{
+  color: orangered;
+  font-size: 25px;
+}
+
+@media screen and (max-width:765px) {
+  .ul-d{
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+  .ul-d li{
+    /* background-color: black; */
+    text-align: center;
+    width: 120px;
+  }
+  .ul-d li:hover{
+    background-color: rgba(0, 0, 0, 0.424);
+    
+    
+  }
+  .ul-d li a:hover{
+    /* color: white; */
+    /* padding: 10px 20px; */
+  }
 }
