@@ -27,7 +27,7 @@ const Blog = () => {
         <div className="single-question">
           <div className="title-wrapper">
             <div>
-              <h2 className="q-title">3. what is useRef and how does work useref work</h2>
+              <h2 className="q-title">3. what is useRef and how does work useref?</h2>
             </div>
           </div>
           <p className='q-p'><span className='ans'>Ans:</span> The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>

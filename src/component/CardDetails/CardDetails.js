@@ -9,7 +9,7 @@ const CardDetails = () => {
   // console.log(topicDetails)
   return (
     <div>
-        <h1>This is: {name}!!</h1>
+        <h1>Quiz of {name}!!</h1>
         <div className="container">
         {
           questions.map(question => <Question

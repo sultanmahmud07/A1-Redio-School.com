@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './component/Blog/Blog';
 import CardDetails from './component/CardDetails/CardDetails';
+import Error from './component/Error/Error';
 import Home from './component/Home/Home';
 import Statastics from './component/Statastics/Statastics';
 import Layout from './layout/Layout';
@@ -13,6 +14,7 @@ function App() {
     {
       path: '/',
       element: <Layout></Layout>,
+      errorElement: <Error></Error>,
       children:[
         {
           path: '/',
@@ -45,10 +47,10 @@ function App() {
           path: '/blog',
           element: <Blog></Blog>
         },
-        {
-          path: '*',
-          element: <div>This rout not a Founded!!</div>
-        }
+        // {
+        //   path: '*',
+        //   element: <Error></Error>
+        // }
       ]
     },
    
