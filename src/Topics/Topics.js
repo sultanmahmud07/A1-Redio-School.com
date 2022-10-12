@@ -8,7 +8,9 @@ const Topics = () => {
   
   return (
     <div>
-      <h1>This is tropic!!!{topics.length}</h1>
+      <div className="title d-block">
+      <h1 className='topic-header'>This is tropic!!!</h1>
+      </div>
       <div className="card-container container">
       {
         topics.map(topic => <TopicsCard

@@ -1,0 +1,26 @@
+.card{
+  background-color: rgba(118, 125, 150, 0.19);
+}
+.info-box{
+  justify-content: space-between;
+  align-items: center;
+}
+.itams-count{
+  color: red;
+}
+.card-btn{
+  width: 100%;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.card-btn:hover{
+background-color: black;
+}
+.card-btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+}
