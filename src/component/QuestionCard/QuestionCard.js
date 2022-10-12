@@ -9,11 +9,11 @@ const Question = ({question}) => {
   console.log(question)
   // console.log(question)
   return (
-    <div className='border p-4 m-5'>
+    <div className='border shadow p-4 m-5'>
      <div className="q-top-header d-flex">
      <h2>Question:</h2>
       <div className="icon">
-        <EyeIcon className="w-25"/>
+        <EyeIcon className="eys-btn w-25"/>
       </div>
 
      </div>

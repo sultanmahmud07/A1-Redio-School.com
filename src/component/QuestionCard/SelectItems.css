@@ -10,3 +10,14 @@
   font-size: 30px;
   color: orange;
 }
+.label-aria{
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
+.label-aria:hover{
+  background-color: rgba(0, 0, 0, 0.169);
+}
+.p-text{
+  color: orangered;
+  font-size: 20px;
+}
