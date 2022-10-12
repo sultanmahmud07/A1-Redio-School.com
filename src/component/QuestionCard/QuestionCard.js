@@ -6,14 +6,17 @@ const Question = ({question}) => {
    const options = question.options;
    const ans =question.correctAnswer;
   // const {id, correctAnswer, question, options} = question
-  console.log(question)
   // console.log(question)
+  console.log(question.id)
+  const eysHendler =() =>{
+    console.log('eys click')
+  }
   return (
     <div className='border shadow p-4 m-5'>
      <div className="q-top-header d-flex">
      <h2>Question:</h2>
       <div className="icon">
-        <EyeIcon className="eys-btn w-25"/>
+        <EyeIcon onClick={() => eysHendler()} className="eys-btn w-25"/>
       </div>
 
      </div>
@@ -24,7 +27,7 @@ const Question = ({question}) => {
       {
           options.map(option => <SelectItems
              key={question.id}
-             option ={option}
+             question ={question}
              ></SelectItems>)
         }
       </div>
